@@ -2,6 +2,8 @@ var express = require('express'); // module을 require 명령어를 통해 호�
 
 var app = express(); // 함수를 app 변수에 담음, express()는 생성자 개념
 
+app.use(express.static(__dirname + '/public')); // 미들함수
+
 app.get('/',function (req,res){
   res.send('Hellow World!');
 }); // 서버의 root에 get 요청이 왔을 때 'hello world!' 라는 신호를 클라이언트
