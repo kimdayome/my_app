@@ -6,3 +6,7 @@ app.get('/',function (req,res){
   res.send('Hellow World!');
 }); // 서버의 root에 get 요청이 왔을 때 'hello world!' 라는 신호를 클라이언트
 // 이벤트 리스너 함수 실행, 첫번째는 조건, 두번째는 반응 함수
+
+app.listen(3000, function(){
+  console.log('Server On!');
+});
